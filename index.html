@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SolarSaathi | Clean Energy Hero</title>
+  <meta name="description" content="Switch to smarter, sustainable energy solutions that reduce your bills, protect the planet, and future-proof your home or business.">
+  
+  <!-- Modern Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700;800;900&family=Plus Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Outer Canvas Presentation Container -->
+  <div class="canvas-wrapper">
+    
+    <!-- Top Mockup Toolbar Controls -->
+    <div class="canvas-toolbar">
+      <div class="toolbar-brand">
+        <span class="dot"></span>
+        <span>SolarSaathi &bull; Clean Energy Design Reference</span>
+      </div>
+      <div class="toolbar-actions">
+        <button class="toolbar-btn" id="brand-toggle-btn" title="Toggle between SunEco (mockup original) and SolarSaathi branding">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12a9 9 0 0 0-9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"/>
+            <path d="M3 3v5h5"/>
+            <path d="M3 12a9 9 0 0 0 9 9 9.75 9.75 0 0 0 6.74-2.74L21 16"/>
+            <path d="M16 21h5v-5"/>
+          </svg>
+          <span id="brand-label-text">Brand: SunEco</span>
+        </button>
+        <button class="toolbar-btn" id="frame-toggle-btn" title="Toggle between frame container and full-width layout">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="15 3 21 3 21 9"/>
+            <polyline points="9 21 3 21 3 15"/>
+            <line x1="21" y1="3" x2="14" y2="10"/>
+            <line x1="3" y1="21" x2="10" y2="14"/>
+          </svg>
+          <span>Fit View</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Main Mockup Container Card -->
+    <main class="mockup-frame" id="hero-frame">
+      
+      <!-- Top Navigation -->
+      <header class="navbar">
+        <a href="#home" class="nav-brand" id="brand-link" aria-label="Brand Home">
+          <div class="brand-icon">
+            <!-- Geometric 8-point radial green sunburst logo icon matching reference -->
+            <svg width="30" height="30" viewBox="0 0 100 100" fill="none">
+              <!-- Radial starburst petals -->
+              <circle cx="50" cy="50" r="13" fill="#2e7d32" />
+              <path d="M50 4 L53 36 L47 36 Z" fill="#2e7d32" />
+              <path d="M50 96 L53 64 L47 64 Z" fill="#2e7d32" />
+              <path d="M4 50 L36 53 L36 47 Z" fill="#2e7d32" />
+              <path d="M96 50 L64 53 L64 47 Z" fill="#2e7d32" />
+              <path d="M17.5 17.5 L40.5 39.5 L36.5 43.5 Z" fill="#2e7d32" />
+              <path d="M82.5 82.5 L59.5 60.5 L63.5 56.5 Z" fill="#2e7d32" />
+              <path d="M82.5 17.5 L60.5 39.5 L56.5 36.5 Z" fill="#2e7d32" />
+              <path d="M17.5 82.5 L39.5 60.5 L43.5 63.5 Z" fill="#2e7d32" />
+              <path d="M30 8 L44 37 L39 40 Z" fill="#43a047" opacity="0.9" />
+              <path d="M70 92 L56 63 L61 60 Z" fill="#43a047" opacity="0.9" />
+              <path d="M8 70 L37 56 L40 61 Z" fill="#43a047" opacity="0.9" />
+              <path d="M92 30 L63 44 L60 39 Z" fill="#43a047" opacity="0.9" />
+            </svg>
+          </div>
+          <span class="brand-title" id="brand-name">SunEco</span>
+        </a>
+
+        <!-- Desktop Navigation Links -->
+        <nav aria-label="Main Navigation">
+          <ul class="nav-links">
+            <li><a href="#home" class="active">Home</a></li>
+            <li><a href="#solutions">Solutions</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#how-we-work">How we work</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+
+        <!-- Navbar CTA Button -->
+        <button class="nav-cta-btn open-modal-btn" aria-label="Get Started">
+          <span>Get Started</span>
+          <svg class="arrow-icon" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="7" y1="17" x2="17" y2="7"></line>
+            <polyline points="7 7 17 7 17 17"></polyline>
+          </svg>
+        </button>
+
+        <button class="mobile-nav-toggle" id="mobile-menu-btn" aria-label="Open mobile menu">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#111827" stroke-width="2">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </header>
+
+      <!-- Hero Section Grid -->
+      <section class="hero-container" id="home">
+        
+        <!-- Left Hero Content Column -->
+        <div class="hero-content">
+          
+          <!-- Badge Tag -->
+          <div class="status-badge">
+            <span class="badge-dot"></span>
+            <span>10K+ Installations Completed</span>
+          </div>
+
+          <!-- Hero Headline -->
+          <h1 class="hero-title">
+            <span class="title-line">Your Energy.</span>
+            <span class="title-line">Your Control.</span>
+            <span class="title-line highlight-green">Your Clean Future.</span>
+          </h1>
+
+          <!-- Hero Description Subtitle -->
+          <p class="hero-description">
+            Switch to smarter, sustainable energy solutions that reduce your bills, protect the planet, and future-proof your home or business.
+          </p>
+
+          <!-- Action Buttons Row -->
+          <div class="hero-actions">
+            <button class="btn-primary open-modal-btn" aria-label="Get Started">
+              <span>Get Started</span>
+              <svg class="arrow-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="7" y1="17" x2="17" y2="7"></line>
+                <polyline points="7 7 17 7 17 17"></polyline>
+              </svg>
+            </button>
+
+            <button class="btn-video-demo" id="watch-demo-btn" aria-label="Watch 2 Min Demo">
+              <span class="play-icon-box">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor">
+                  <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                </svg>
+              </span>
+              <span class="demo-text">Watch 2 Min Demo</span>
+            </button>
+          </div>
+
+          <!-- Social Proof / Star Rating -->
+          <div class="trust-rating-row">
+            <div class="stars-group" aria-label="Rated 4.9 out of 5 stars">
+              <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+            </div>
+            <div class="rating-number">4.9</div>
+            <div class="trust-divider"></div>
+            <div class="trust-label-box">
+              <span class="trust-sub">Trusted by</span>
+              <span class="trust-count">10,000+ homeowners</span>
+            </div>
+          </div>
+
+          <!-- Partner Brands Logos -->
+          <div class="partner-logos-bar" aria-label="Trusted technology partners">
+            
+            <!-- Tesla -->
+            <div class="partner-logo" title="Tesla">
+              <svg viewBox="0 0 100 18" height="16">
+                <!-- Tesla stylized T emblem -->
+                <path d="M6 1.5 C7.5 1.5 9.5 2 11 3.2 L9.8 4.6 C8.6 3.7 7.2 3.3 6 3.3 C4.8 3.3 3.4 3.7 2.2 4.6 L1 3.2 C2.5 2 4.5 1.5 6 1.5 Z" />
+                <path d="M5.2 5.5 L6.8 5.5 L6.4 15.5 L5.6 15.5 Z" />
+                <!-- TESLA wordmark text -->
+                <text x="18" y="13.5" font-family="'Outfit', sans-serif" font-weight="800" font-size="12" letter-spacing="3.2">TESLA</text>
+              </svg>
+            </div>
+
+            <!-- SolarEdge -->
+            <div class="partner-logo" title="SolarEdge">
+              <svg viewBox="0 0 105 18" height="16">
+                <rect x="1" y="3.5" width="10" height="10" rx="2" fill="#d92d20"/>
+                <rect x="4.5" y="7" width="3" height="3" fill="#ffffff"/>
+                <text x="16" y="13" font-family="'Plus Jakarta Sans', sans-serif" font-weight="700" font-size="12.5" letter-spacing="-0.4">solar<tspan font-weight="400">edge</tspan></text>
+              </svg>
+            </div>
+
+            <!-- LG -->
+            <div class="partner-logo" title="LG">
+              <svg viewBox="0 0 54 18" height="16">
+                <circle cx="8" cy="8.5" r="7" fill="none" stroke="currentColor" stroke-width="1.6"/>
+                <circle cx="5.5" cy="6.2" r="1.1" fill="currentColor"/>
+                <path d="M8 5v4.5h2.5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                <text x="20" y="13" font-family="'Plus Jakarta Sans', sans-serif" font-weight="800" font-size="13" letter-spacing="0.5">LG</text>
+              </svg>
+            </div>
+
+            <!-- Schneider Electric -->
+            <div class="partner-logo" title="Schneider Electric">
+              <svg viewBox="0 0 120 20" height="17">
+                <path d="M4 14C6.5 7.5 9.5 4 12 3C9.5 6.5 8 11.5 6.5 16C5.5 15.5 4.8 14.8 4 14Z" fill="#009530"/>
+                <text x="16" y="10" font-family="'Plus Jakarta Sans', sans-serif" font-weight="700" font-size="9" letter-spacing="-0.2">Schneider</text>
+                <text x="16" y="17" font-family="'Plus Jakarta Sans', sans-serif" font-weight="500" font-size="6.5" letter-spacing="0.8">ELECTRIC</text>
+              </svg>
+            </div>
+
+            <!-- LONGi -->
+            <div class="partner-logo" title="LONGi">
+              <svg viewBox="0 0 68 18" height="15">
+                <text x="0" y="13" font-family="'Outfit', sans-serif" font-weight="800" font-size="13.5" letter-spacing="1">LONG<tspan font-weight="600">i</tspan></text>
+              </svg>
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- Right Hero Visual Showcase Column -->
+        <div class="hero-visual-wrapper">
+          <div class="hero-visual-container">
+            
+            <!-- 3D Island Diorama Image -->
+            <img 
+              src="assets/hero-diorama.jpg" 
+              alt="Sustainable eco house with rooftop solar panels, green lawn, garden, and wind turbines on circular island plinth" 
+              class="diorama-image"
+              id="hero-diorama-img"
+            >
+
+            <!-- Floating Glassmorphic Metric Stat Card -->
+            <aside class="floating-stat-card" id="interactive-stat-card" title="Click to view alternate metrics" role="status" aria-live="polite">
+              <div class="stat-icon-wrapper" id="stat-icon-container">
+                <!-- Lightning Bolt Icon -->
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" />
+                </svg>
+              </div>
+              <div class="stat-data-box">
+                <span class="stat-label" id="stat-label">Energy Generated</span>
+                <span class="stat-value" id="stat-value">1.4 MW</span>
+                <span class="stat-trend" id="stat-trend">
+                  <span class="trend-arrow">↗</span>
+                  <span id="stat-sub">+18% this month</span>
+                </span>
+              </div>
+            </aside>
+
+          </div>
+        </div>
+
+      </section>
+
+    </main>
+
+  </div>
+
+  <!-- Interactive Get Started Modal (Savings Estimator) -->
+  <div class="modal-overlay" id="estimator-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal-window">
+      <button class="modal-close-btn" id="modal-close" aria-label="Close dialog">&times;</button>
+      
+      <div class="modal-header">
+        <h3 id="modal-title">Solar Rooftop Sizing &amp; Savings</h3>
+        <p>Estimate your clean energy production, monthly savings, and CO₂ offset in seconds.</p>
+      </div>
+
+      <div class="calc-input-group">
+        <label for="bill-slider">Average Monthly Electricity Bill</label>
+        <div class="calc-range-wrapper">
+          <input type="range" id="bill-slider" min="1500" max="25000" step="500" value="4500">
+          <span class="calc-val-pill" id="bill-display">₹4,500/mo</span>
+        </div>
+      </div>
+
+      <div class="calc-input-group">
+        <label for="roof-slider">Available Rooftop Area (Sq. Ft)</label>
+        <div class="calc-range-wrapper">
+          <input type="range" id="roof-slider" min="200" max="3000" step="50" value="500">
+          <span class="calc-val-pill" id="roof-display">500 sq ft</span>
+        </div>
+      </div>
+
+      <div class="calc-result-box">
+        <div class="calc-res-item">
+          <div class="res-label">Recommended System</div>
+          <div class="res-num" id="res-capacity">3.5 kW</div>
+        </div>
+        <div class="calc-res-item">
+          <div class="res-label">Annual Bill Savings</div>
+          <div class="res-num" id="res-savings">₹42,800</div>
+        </div>
+      </div>
+
+      <button class="calc-submit-btn" id="confirm-consultation-btn">Get Customized Free Quote ↗</button>
+    </div>
+  </div>
+
+  <!-- Interactive Video Demo Modal -->
+  <div class="modal-overlay" id="video-demo-modal" role="dialog" aria-modal="true">
+    <div class="modal-window">
+      <button class="modal-close-btn" id="video-modal-close" aria-label="Close video">&times;</button>
+      
+      <div class="modal-header">
+        <h3>2-Minute Interactive Solar Tour</h3>
+        <p>Explore how rooftop solar, smart inverters, and battery storage integrate into a modern smart home.</p>
+      </div>
+
+      <div class="demo-video-box">
+        <div class="demo-play-pulse" id="video-play-action">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="#ffffff">
+            <polygon points="5 3 19 12 5 21 5 3"></polygon>
+          </svg>
+        </div>
+        <span class="demo-video-caption">3D Smart Eco-System Architecture Demo</span>
+      </div>
+
+      <button class="calc-submit-btn" style="margin-top: 18px;" id="demo-action-btn">Book Free Site Survey ↗</button>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
